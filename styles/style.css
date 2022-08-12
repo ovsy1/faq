@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Futura Demi';
+  src: url('FuturaDemiC.eot');
+  src: url('FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+    url('FuturaDemiC.woff') format('woff'),
+    url('FuturaDemiC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url('FuturaBookC.eot');
+  src: url('FuturaBookC.eot?#iefix') format('embedded-opentype'),
+    url('FuturaBookC.woff') format('woff'),
+    url('FuturaBookC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,34 +25,55 @@
 }
 
 body {
-  background-color: #FAFAFA;
-  font-family: futura-pt, sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  background-color: #fafafa;
 }
 
-.hero {
+.container {
   max-width: 1160px;
   max-height: 50px;
   margin: 0 auto;
   margin-top: 170px;
   position: relative;
-  color: #302F2D;
+  color: #302f2d;
 }
 
 .hero__text {
   font-size: 50px;
   margin-bottom: 60px;
+  font-family: 'Futura Demi';
+  line-height: 50px;
+
 }
 
 .hero__link {
-  color: #302F2D;
+  font-family: 'Futura Book';
+  color: #302f2d;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   align-items: center;
-
+  line-height: 25px;
   float: left;
 }
+
+.hero__link:hover {
+  color: #E65639;
+  transition: 0.2s ease-out;
+}
+
+.hero__search {
+  font-family: 'Futura Book';
+  margin-left: 165px;
+  max-width: 300px;
+  max-height: 40px;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 2px solid #302F2D;
+  background: transparent;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
 
 .hero__nav {
   display: flex;
@@ -42,14 +83,62 @@ body {
 .hr-top {
   width: 1160px;
   height: 0px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   margin-bottom: 32px;
 }
 
 .hr-bot {
   width: 1160px;
   height: 0px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   margin-top: 33px;
 }
 
+.faq__title {
+  font-family: 'Futura Book';
+  margin-top: 80px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.collapsible {
+  background-color: transparent;
+  color: #302F2D;
+  cursor: pointer;
+  padding: 25px 0px 25px 30px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 30px;
+}
+
+.faq__item {
+  padding: 25px 0px 0px 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.faq__li {
+  font-family: 'Futura Demi';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.faq__list {
+  padding-left: 20px;
+}
