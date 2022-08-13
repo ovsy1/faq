@@ -129,11 +129,11 @@ body {
   background-color: transparent;
   color: #302F2D;
   cursor: pointer;
-  padding: 25px 0px 25px 3px;
+  padding: 25px 0px 25px 0px;
+  height: 75px;
   width: 100%;
   border: none;
   border-top: 1px solid #E6E6E6;
-  border-bottom: 1px solid #E6E6E6;
   text-align: left;
   outline: none;
   font-size: 20px;
@@ -145,15 +145,19 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  margin-bottom: 30px;
 }
 
 .faq__item {
   font-family: 'Futura Book';
-  padding: 25px 0px 0px 0px;
+  padding-top: 6px;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
+  padding-left: 14px;
+}
+
+.last {
+  margin-bottom: 25px;
 }
 
 .faq__li {
@@ -164,7 +168,7 @@ body {
 }
 
 .faq__list {
-  padding-left: 20px;
+  padding-left: 21px;
 }
 
 .faq__paragraph {
@@ -204,9 +208,9 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-
   position: absolute;
-  top: 50%;
+  margin-top: 130px;
+  margin-left: 199px;
 }
 
 .help__button {
@@ -219,7 +223,13 @@ body {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-
   position: absolute;
-  top: 50%;
+  margin-top: 220px;
+  margin-left: 198px;
+}
+
+.help__button:hover {
+  cursor: pointer;
+  background: #cc381a;
+  transition: 0.2s ease-out;
 }
