@@ -1,4 +1,5 @@
 var coll = document.getElementsByClassName("collapsible");
+var li = document.getElementsByClassName("faq__li");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -12,3 +13,10 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
+
+document.getElementsByClassName('collapsible').onclick = function() {
+  document.getElementsByClassName('faq__li').classList.add('change');
+}
+
+
