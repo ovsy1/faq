@@ -162,16 +162,26 @@ body {
   font-size: 20px;
   line-height: 25px;
   margin-left: -11px;
-  position: relative;
-}
-
-.faq__li::after {
-  content: '\002B';
   position: absolute;
-  right: 0;
-  color: rgb(230, 86, 57);
 }
 
+.close::after {
+  content: url(../img/plus.png);
+  color: rgb(230, 86, 57);
+  width: 20px;
+  height: 20px;
+  transition: 0.2s ease-out;
+  margin-left: 1126px;
+}
+
+.open::after {
+  content: url(../img/minus.png);
+  color: rgb(230, 86, 57);
+  width: 20px;
+  height: 20px;
+  transition: 0.2s ease-out;
+  margin-left: 1126px;
+}
 
 .faq__list {
   padding-left: 21px;
@@ -202,8 +212,8 @@ body {
   font-weight: 500;
   font-size: 30px;
   line-height: 30px;
-  margin-top: 80px;
-  left: 17%;
+  margin-top: 78px;
+  left: 199px;
   position: absolute;
 }
 
@@ -215,7 +225,7 @@ body {
   font-size: 20px;
   line-height: 25px;
   position: absolute;
-  margin-top: 130px;
+  margin-top: 127px;
   margin-left: 199px;
 }
 
@@ -230,8 +240,8 @@ body {
   line-height: 16px;
   font-weight: 500;
   position: absolute;
-  margin-top: 220px;
-  margin-left: 198px;
+  margin-top: 216px;
+  margin-left: 199px;
 }
 
 .help__button:hover {
