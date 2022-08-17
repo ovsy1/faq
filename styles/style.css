@@ -35,15 +35,16 @@ body {
 }
 
 .hero__button {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 138px;
-  right: 1px;
+  top: 139px;
+  right: 2px;
+  cursor: pointer;
 }
 
 .hero__text {
@@ -70,7 +71,7 @@ body {
 .hero__search {
   position: absolute;
   font-family: "Futura Book";
-  width: 300px;
+  width: 305px;
   height: 50px;
   margin: 0px auto 0px 135px;
   border-top: none;
@@ -84,6 +85,15 @@ body {
   font-weight: 400;
   right: 0px;
   top: 123px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: url(../img/cross.svg);
+  margin-right: 44px;
+  margin-top: 3px;
 }
 
 .hero__search:focus {
