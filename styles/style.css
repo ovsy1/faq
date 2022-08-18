@@ -268,38 +268,128 @@ input[type="search"]::-webkit-search-cancel-button {
   .container {
     width: 920px;
   }
+
   .hero__search {
     left: 504px;
     width: 280px;
     font-size: 20px;
   }
+
   .close::after {
     margin-left: 900px;
   }
+
   .open::after {
     margin-left: 900px;
   }
+
   .hr-top {
     width: 920px;
   }
+
   .hr-bot {
     width: 920px;
   }
+
   .hero__button {
     position: absolute;
     top: 139px;
     right: 2px;
   }
+
   .collapsible {
     width: 920px;
   }
+
   .faq__li {
     margin-left: 0;
   }
+
   .large {
     display: none;
   }
+
   .small {
     display: contents;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: 690px;
+  }
+
+  .hero__search {
+    left: 275px;
+    top: 172px;
+    width: 280px;
+    font-size: 20px;
+  }
+
+  .close::after {
+    margin-left: 670px;
+  }
+
+  .open::after {
+    margin-left: 670px;
+  }
+
+  .hr-top {
+    width: 690px;
+  }
+
+  .faq__li {
+    margin-left: 0;
+    width: 420px;
+  }
+
+  .help {
+    width: 690px;
+  }
+
+  .help__h1 {
+    left: 80px;
+  }
+
+  .help__paragraph {
+    margin-left: 80px;
+  }
+
+  .help__button {
+    margin-left: 80px;
+  }
+
+  .hr-bot {
+    width: 690px;
+  }
+
+  .hero__button {
+    position: absolute;
+    top: 188px;
+    right: 2px;
+  }
+
+  .collapsible {
+    width: 690px;
+    margin-bottom: 25px;
+  }
+
+  .faq__paragraph {
+    width: 450px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .faq__image {
+    width: 450px;
+    height: 330px;
+    margin-top: 18px;
+    margin-bottom: 37px;
+  }
+  .adaptive {
+    width: 450px;
+  }
+  .quote {
+    display: none;
   }
 }
