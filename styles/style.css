@@ -22,10 +22,14 @@ body {
   background-color: rgb(250, 250, 250);
 }
 
+.hero__form {
+  margin-left: auto;
+}
+
 .container {
   max-width: 1160px;
   max-height: 50px;
-  margin: 0px auto;
+  margin: 0 auto;
   position: relative;
   color: rgb(48, 47, 45);
 }
@@ -35,16 +39,17 @@ body {
 }
 
 .hero__button {
+  position: absolute;
   width: 18px;
   height: 18px;
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-  position: absolute;
-  top: 139px;
-  right: 2px;
   cursor: pointer;
+  top: 74%;
+  transform: translateY(-50%);
+  right: 2px;
 }
 
 .hero__text {
@@ -87,9 +92,10 @@ body {
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
-  right: 0px;
-  top: 124px;
-}
+  top: 74%;
+  transform: translateY(-50%);
+  right: 0;
+  }
 
 input[type="search"]::-webkit-search-cancel-button {
   appearance: none;
@@ -107,6 +113,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .hero__nav {
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 
 .hr-top {
@@ -266,6 +273,7 @@ input[type="search"]::-webkit-search-cancel-button {
 @media screen and (max-width: 1280px) {
   .container {
     width: 1160px;
+    margin: 0 auto;
   }
 
   .collapsible {
@@ -276,6 +284,7 @@ input[type="search"]::-webkit-search-cancel-button {
 @media screen and (max-width: 1020px) {
   .container {
     width: 920px;
+    margin: 0 auto;
   }
 
   .hero__search {
@@ -283,6 +292,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 280px;
     font-size: 20px;
   }
+
 
   .close::after {
     margin-left: 900px;
@@ -346,9 +356,11 @@ input[type="search"]::-webkit-search-cancel-button {
 
   .hero__search {
     left: 275px;
-    top: 172px;
+    top: 199px;
     width: 280px;
     font-size: 20px;
+    background: linear-gradient(270deg, #FAFAFA 21.67%, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 0) 100%);
+    z-index: 100;
   }
 
   .close::after {
@@ -390,8 +402,9 @@ input[type="search"]::-webkit-search-cancel-button {
 
   .hero__button {
     position: absolute;
-    top: 188px;
+    top: 198px;
     right: 2px;
+    z-index: 100;
   }
 
   .collapsible {
@@ -417,6 +430,9 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 
   .quote {
+    display: none;
+  }
+  .enter {
     display: none;
   }
 }
@@ -460,7 +476,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
   .hero__button {
     position: absolute;
-    top: 188px;
+    top: 197px;
     right: 2px;
   }
 
@@ -509,7 +525,7 @@ input[type="search"]::-webkit-search-cancel-button {
   .help__button {
     margin-left: 10px;
   }
-  
+
   .enter {
     display: none;
   }
@@ -518,6 +534,7 @@ input[type="search"]::-webkit-search-cancel-button {
 @media screen and (max-width: 320px) {
   .container {
     width: 280px;
+    margin: 0 auto;
   }
 
   .hero__text {
@@ -529,7 +546,7 @@ input[type="search"]::-webkit-search-cancel-button {
   .hero__search {
     left: -135px;
     width: 280px;
-    top: 132px;
+    top: 159px;
     font-size: 20px;
     margin-top: 25px;
   }
@@ -561,7 +578,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
   .hero__button {
     position: absolute;
-    top: 173px;
+    top: 183px;
     right: 2px;
   }
 
@@ -621,7 +638,7 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-left: 10px;
     top: 44px;
   }
-  
+
   .enter {
     display: none;
   }
