@@ -95,7 +95,7 @@ body {
   top: 74%;
   transform: translateY(-50%);
   right: 0;
-  }
+}
 
 input[type="search"]::-webkit-search-cancel-button {
   appearance: none;
@@ -226,7 +226,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .help__h1 {
-  width: 760px;
   height: 30px;
   font-family: "Futura Demi";
   font-weight: 500;
@@ -238,7 +237,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .help__paragraph {
-  width: 760px;
   height: 50px;
   font-family: "Futura Book";
   font-weight: 400;
@@ -359,8 +357,8 @@ input[type="search"]::-webkit-search-cancel-button {
     top: 199px;
     width: 280px;
     font-size: 20px;
-    background: linear-gradient(270deg, #FAFAFA 21.67%, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 0) 100%);
-    z-index: 100;
+    background: #fafafa;
+  box-shadow: -35px 0px 10px 0px rgb(250 250 250 / 88%);
   }
 
   .close::after {
@@ -432,6 +430,7 @@ input[type="search"]::-webkit-search-cancel-button {
   .quote {
     display: none;
   }
+
   .enter {
     display: none;
   }
