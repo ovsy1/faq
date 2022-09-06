@@ -52,6 +52,16 @@ body {
   right: 2px;
 }
 
+.hero__button::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -40px;
+  left: -40px;
+  right: -40px;
+  bottom: -40px;
+}
+
 .hero__text {
   font-size: 50px;
   margin-bottom: 60px;
