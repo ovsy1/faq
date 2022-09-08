@@ -38,6 +38,7 @@ body {
   position: relative;
 }
 
+
 .hero__button {
   position: absolute;
   width: 18px;
@@ -56,10 +57,10 @@ body {
   content: '';
   position: absolute;
   display: block;
-  top: -40px;
-  left: -40px;
-  right: -40px;
-  bottom: -40px;
+  top: -11px;
+  left: -11px;
+  right: -11px;
+  bottom: -11px;
 }
 
 .hero__text {
@@ -114,30 +115,23 @@ input[type="search"]::-webkit-search-cancel-button {
   background: url("../img/cross.svg");
   margin-right: 44px;
   margin-top: 3px;
+  cursor: pointer;
 }
 
 .hero__search:focus {
   outline: none;
 }
 
-.hero__nav {
+.hero__ul {
   display: flex;
   gap: 30px;
+}
+
+.hero__nav {
   align-items: center;
-}
-
-.hr-top {
-  width: 1160px;
-  height: 0px;
-  border: 1px solid rgb(230, 230, 230);
-  margin-bottom: 30px;
-}
-
-.hr-bot {
-  width: 1160px;
-  height: 0px;
-  border: 1px solid rgb(230, 230, 230);
-  margin-top: 31px;
+  border-top: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding: 30px 0 32px 0;
 }
 
 .faq__title {
@@ -200,7 +194,6 @@ input[type="search"]::-webkit-search-cancel-button {
   color: rgb(230, 86, 57);
   width: 20px;
   height: 20px;
-  transition: all 0.2s ease-out 0s;
   margin-left: 1126px;
 }
 
@@ -209,7 +202,6 @@ input[type="search"]::-webkit-search-cancel-button {
   color: rgb(230, 86, 57);
   width: 20px;
   height: 20px;
-  transition: all 0.2s ease-out 0s;
   margin-left: 1126px;
 }
 
@@ -217,7 +209,7 @@ input[type="search"]::-webkit-search-cancel-button {
   padding-left: 21px;
 }
 
-.faq__paragraph {
+.content > p {
   font-family: "Futura Book";
   width: 860px;
   margin: 25px 0px;
