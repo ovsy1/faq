@@ -71,6 +71,7 @@ body {
   line-height: 50px;
 }
 
+
 .hero__link {
   font-family: "Futura Book";
   color: rgb(48, 47, 45);
@@ -222,13 +223,13 @@ input[type="search"]::-webkit-search-cancel-button {
   border: none;
   cursor: pointer;
   margin-left: 950px;
-} 
+}
 
 .faq__list {
   padding-left: 21px;
 }
 
-.content > p {
+.content>p {
   font-family: "Futura Book";
   width: 860px;
   margin: 25px 0px;
@@ -283,15 +284,13 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-left: 199px;
 }
 
+
 .help__button:hover {
   cursor: pointer;
   background: rgb(204, 56, 26);
   transition: all 0.2s ease-out 0s;
 }
 
-.short {
-  display: none;
-}
 
 #topBtn {
   font-family: "Futura Demi";
@@ -322,10 +321,25 @@ input[type="search"]::-webkit-search-cancel-button {
   .collapsible {
     width: 1160px;
   }
+
   .short {
     display: none;
   }
+
 }
+
+@media screen and (max-width: 1200px) {
+  .in-desktop {
+    display: none!important;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .in-desktop-hide {
+    display: none!important;
+  }
+}
+
+
 
 @media screen and (max-width: 1020px) {
   .container {
@@ -370,14 +384,6 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-left: 0px;
   }
 
-  .large {
-    display: none;
-  }
-
-  .small {
-    display: contents;
-  }
-
   .help {
     width: 920px;
   }
@@ -393,10 +399,12 @@ input[type="search"]::-webkit-search-cancel-button {
   .help__button {
     margin-left: 80px;
   }
+
   .short {
     display: none;
   }
 }
+
 
 @media screen and (max-width: 760px) {
   .container {
@@ -409,7 +417,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 280px;
     font-size: 20px;
     background: #fafafa;
-  box-shadow: -35px 0px 10px 0px rgb(250 250 250 / 88%);
+    box-shadow: -35px 0px 10px 0px rgb(250 250 250 / 88%);
   }
 
   .close::after {
@@ -575,6 +583,7 @@ input[type="search"]::-webkit-search-cancel-button {
   .enter {
     display: none;
   }
+
   .short {
     display: block;
   }
@@ -692,3 +701,6 @@ input[type="search"]::-webkit-search-cancel-button {
     display: none;
   }
 }
+
+
+
