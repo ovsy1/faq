@@ -16,11 +16,11 @@
       <div class="nav">
       <nav class="hero__nav" role="navigation">
         <ul class="hero__ul">
-          <a href="#" class="hero__link">Популярное</a></li>
-          <a href="#" class="hero__link large">Управление пожертвованием</a></li>
-          <a href="#" class="hero__link small">Пожертвования</a></li>
-          <a href="#" class="hero__link gradient">О&nbsp;благотворительности</a></li>
-          <a href="#" class="hero__link">О&nbsp;фонде</a></li>
+          <li><a href="#popular" class="hero__link">Популярное</a></li>
+          <li><a href="#donate" class="hero__link large">Управление пожертвованием</a></li>
+          <li><a href="#donate" class="hero__link small">Пожертвования</a></li>
+          <li><a href="#charity" class="hero__link gradient">О&nbsp;благотворительности</a></li>
+          <li><a href="#about" class="hero__link">О&nbsp;фонде</a></li>
         </ul>
         <form action="" class="hero__form">
           <input class="hero__search" type="search" placeholder="Поиск по&nbsp;вопросам и&nbsp;ответам">
@@ -30,7 +30,7 @@
       </div>
     </section>
     <section>
-      <h2 class="faq__title">Самые популярные вопросы</h2>
+      <h2 class="faq__title" id="popular">Самые популярные вопросы</h2>
       <div class="faq">
         <div class="faq__item change">
           <button class="collapsible close">
@@ -147,7 +147,7 @@
       </div>
     </section>
     <section>
-      <h2 class="faq__title">Управление пожертвованием</h2>
+      <h2 class="faq__title" id="donate">Управление пожертвованием</h2>
       <div class="faq">
         <div class="faq__item change">
           <button class="collapsible close">
@@ -258,7 +258,7 @@
       </div>
     </section>
     <section>
-      <h2 class="faq__title">О благотворительности</h2>
+      <h2 class="faq__title" id="charity">О благотворительности</h2>
       <div class="faq">
         <div class="faq__item change">
           <button class="collapsible close">
@@ -369,7 +369,7 @@
       </div>
     </section>
     <section>
-      <h2 class="faq__title">О фонде</h2>
+      <h2 class="faq__title" id="about">О фонде</h2>
       <div class="faq">
         <div class="faq__item change">
           <button class="collapsible close">
@@ -488,6 +488,7 @@
         <button class="help__button">СВЯЖИТЕСЬ С НАМИ</button>
       </div>
     </section>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
   </div>
   <script src="src/src.js"></script>
 </body>
